@@ -2,7 +2,12 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["image2.jdomni.in", "image3.jdomni.in", "localhost"],
+    domains: [
+      "image2.jdomni.in",
+      "image3.jdomni.in",
+      "localhost",
+      "fakestoreapi.com",
+    ],
   },
 };
 
