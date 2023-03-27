@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { $products, pageOpened } from "@component/widgets/model";
 import { useStore } from "effector-react";
+import SliderCard from "@component/features/ui/slider-card";
 
 const MainSlider = () => {
   const products = useStore($products);
@@ -15,14 +16,7 @@ const MainSlider = () => {
   return (
     <Carousel autoplay>
       {products.map((product) => (
-        <Link href={`/products/${product.id}`} key={product.id}>
-          <Image
-            src={product.image}
-            alt={"Men style"}
-            width={679}
-            height={461}
-          ></Image>
-        </Link>
+        <SliderCard product={product} key={product.id} />
       ))}
     </Carousel>
   );
