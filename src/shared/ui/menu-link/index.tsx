@@ -8,7 +8,7 @@ export interface MenuLink {
 
 const MenuLink = ({ text, link }: MenuLink) => {
   return (
-    <Link className={styles.menuLink} href={link}>
+    <Link className={styles["menu-link"]} href={link}>
       {text}
     </Link>
   );
