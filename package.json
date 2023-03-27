@@ -33,6 +33,7 @@
     "@storybook/nextjs": "^7.0.0-rc.8",
     "@storybook/react": "^7.0.0-rc.8",
     "@storybook/testing-library": "^0.0.14-next.1",
+    "sass": "^1.60.0",
     "storybook": "^7.0.0-rc.8"
   }
 }
