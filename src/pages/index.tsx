@@ -1,9 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import styles from '@component/styles/Home.module.css'
-import Header from '@component/widgets/ui/header'
-import MainSlider from '@component/widgets/ui/main-slider'
+import MainSlider from '@component/widgets/main-slider/ui'
 
 const inter = Inter({ subsets: ['latin'] })
 

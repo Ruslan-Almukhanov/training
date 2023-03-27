@@ -1,4 +1,4 @@
-import { Product } from "@component/widgets/types";
+import { Product } from '@component/widgets/main-slider/types';
 import Image from 'next/image';
 import Link from "next/link";
 import React from "react";

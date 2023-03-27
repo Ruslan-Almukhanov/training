@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import MenuLink from "@component/shared/ui/menu-link";
 import styles from "./styles.module.scss";
-import Link from "next/link";
 import Image from "next/image";
 import { Layout, Menu, MenuProps } from "antd";
 import { useRouter } from "next/router";
+import MenuLink from "@component/shared/menu-link/ui";
 
 const items: MenuProps["items"] = [
   {

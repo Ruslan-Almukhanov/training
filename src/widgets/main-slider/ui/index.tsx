@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import { Carousel } from "antd";
-import Link from "next/link";
-import Image from "next/image";
-import { $products, pageOpened } from "@component/widgets/model";
 import { useStore } from "effector-react";
-import SliderCard from "@component/features/ui/slider-card";
+import { pageOpened } from "@component/widgets/main-slider/model";
+import { Product } from "@component/widgets/main-slider/types";
+import { $products } from "@component/widgets/main-slider/model";
+import SliderCard from "@component/features/slider/ui/slider-card";
 
 const MainSlider = () => {
-  const products = useStore($products);
+  const products = useStore<Product[]>($products);
 
   useEffect(() => {
     pageOpened();
